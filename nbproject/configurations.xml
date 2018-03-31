@@ -1,0 +1,422 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="97">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <logicalFolder name="HeaderFiles"
+                   displayName="Header Files"
+                   projectFiles="true">
+      <itemPath>source/application.h</itemPath>
+      <itemPath>source/character.h</itemPath>
+      <itemPath>source/database.h</itemPath>
+      <itemPath>source/day.h</itemPath>
+      <itemPath>source/queries.h</itemPath>
+      <itemPath>source/time.h</itemPath>
+      <itemPath>source/ui.h</itemPath>
+      <itemPath>source/user.h</itemPath>
+      <itemPath>source/world.h</itemPath>
+    </logicalFolder>
+    <logicalFolder name="ResourceFiles"
+                   displayName="Resource Files"
+                   projectFiles="true">
+    </logicalFolder>
+    <logicalFolder name="SourceFiles"
+                   displayName="Source Files"
+                   projectFiles="true">
+      <itemPath>source/application.cpp</itemPath>
+      <itemPath>source/character.cpp</itemPath>
+      <itemPath>source/database.cpp</itemPath>
+      <itemPath>source/day.cpp</itemPath>
+      <itemPath>source/main.cpp</itemPath>
+      <itemPath>source/time.cpp</itemPath>
+      <itemPath>source/ui.cpp</itemPath>
+      <itemPath>source/user.cpp</itemPath>
+      <itemPath>source/world.cpp</itemPath>
+    </logicalFolder>
+    <logicalFolder name="TestFiles"
+                   displayName="Test Files"
+                   projectFiles="false"
+                   kind="TEST_LOGICAL_FOLDER">
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>Makefile</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Release-Linux" type="1">
+      <toolsSet>
+        <compilerSet>GNU|GNU</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <cTool>
+          <developmentMode>5</developmentMode>
+        </cTool>
+        <ccTool>
+          <developmentMode>6</developmentMode>
+          <stripSymbols>true</stripSymbols>
+          <architecture>2</architecture>
+          <standard>8</standard>
+          <incDir>
+            <pElem>../../../libraries/irrlicht-1.8.3/include</pElem>
+            <pElem>../../../libraries/sqlite-3.8.4.2/include</pElem>
+          </incDir>
+          <preprocessorList>
+            <Elem>_IRR_STATIC_LIB_</Elem>
+          </preprocessorList>
+          <warningLevel>0</warningLevel>
+        </ccTool>
+        <fortranCompilerTool>
+          <developmentMode>5</developmentMode>
+        </fortranCompilerTool>
+        <asmTool>
+          <developmentMode>5</developmentMode>
+          <warningLevel>0</warningLevel>
+        </asmTool>
+        <linkerTool>
+          <output>application-linux</output>
+          <linkerAddLib>
+            <pElem>../../../libraries/irrlicht-1.8.3/lib/Linux</pElem>
+            <pElem>../../../libraries/sqlite-3.8.4.2/lib/Linux64</pElem>
+          </linkerAddLib>
+          <stripSymbols>true</stripSymbols>
+          <linkerLibItems>
+            <linkerLibLibItem>Irrlicht</linkerLibLibItem>
+            <linkerLibLibItem>GL</linkerLibLibItem>
+            <linkerLibLibItem>Xxf86vm</linkerLibLibItem>
+            <linkerLibLibItem>Xext</linkerLibLibItem>
+            <linkerLibLibItem>X11</linkerLibLibItem>
+            <linkerLibLibItem>sqlite</linkerLibLibItem>
+          </linkerLibItems>
+        </linkerTool>
+      </compileType>
+      <packaging>
+        <packType>Zip</packType>
+        <packFileList>
+          <packFileListElem type="File"
+                            to="${PACKAGE_TOP_DIR}bin/${OUTPUT_BASENAME}.exe"
+                            from="${OUTPUT_PATH}.exe"
+                            perm="755"
+                            owner="root"
+                            group="bin"/>
+        </packFileList>
+      </packaging>
+      <item path="source/application.cpp" ex="false" tool="1" flavor2="9">
+      </item>
+      <item path="source/application.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="source/character.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="source/character.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="source/database.cpp" ex="false" tool="1" flavor2="9">
+      </item>
+      <item path="source/database.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="source/day.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="source/day.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="source/main.cpp" ex="false" tool="1" flavor2="9">
+      </item>
+      <item path="source/queries.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="source/time.cpp" ex="false" tool="1" flavor2="9">
+      </item>
+      <item path="source/time.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="source/ui.cpp" ex="false" tool="1" flavor2="9">
+      </item>
+      <item path="source/ui.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="source/user.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="source/user.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="source/world.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="source/world.h" ex="false" tool="3" flavor2="0">
+      </item>
+    </conf>
+    <conf name="Debug-Linux" type="1">
+      <toolsSet>
+        <compilerSet>GNU|GNU</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <cTool>
+          <developmentMode>5</developmentMode>
+        </cTool>
+        <ccTool>
+          <architecture>2</architecture>
+          <standard>8</standard>
+          <incDir>
+            <pElem>../../../libraries/irrlicht-1.8.3/include</pElem>
+            <pElem>../../../libraries/sqlite-3.8.4.2/include</pElem>
+          </incDir>
+          <preprocessorList>
+            <Elem>_IRR_STATIC_LIB_</Elem>
+          </preprocessorList>
+        </ccTool>
+        <fortranCompilerTool>
+          <developmentMode>5</developmentMode>
+        </fortranCompilerTool>
+        <asmTool>
+          <developmentMode>5</developmentMode>
+          <warningLevel>0</warningLevel>
+        </asmTool>
+        <linkerTool>
+          <output>debug-linux</output>
+          <linkerAddLib>
+            <pElem>../../../libraries/irrlicht-1.8.3/lib/Linux</pElem>
+            <pElem>../../../libraries/sqlite-3.8.4.2/lib/Linux64</pElem>
+          </linkerAddLib>
+          <linkerLibItems>
+            <linkerLibLibItem>Irrlicht</linkerLibLibItem>
+            <linkerLibLibItem>GL</linkerLibLibItem>
+            <linkerLibLibItem>Xxf86vm</linkerLibLibItem>
+            <linkerLibLibItem>Xext</linkerLibLibItem>
+            <linkerLibLibItem>X11</linkerLibLibItem>
+            <linkerLibLibItem>sqlite</linkerLibLibItem>
+          </linkerLibItems>
+        </linkerTool>
+      </compileType>
+      <packaging>
+        <packType>Zip</packType>
+        <packFileList>
+          <packFileListElem type="File"
+                            to="${PACKAGE_TOP_DIR}bin/${OUTPUT_BASENAME}.exe"
+                            from="${OUTPUT_PATH}.exe"
+                            perm="755"
+                            owner="root"
+                            group="bin"/>
+        </packFileList>
+      </packaging>
+      <item path="source/application.cpp" ex="false" tool="1" flavor2="9">
+      </item>
+      <item path="source/application.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="source/character.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="source/character.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="source/database.cpp" ex="false" tool="1" flavor2="9">
+      </item>
+      <item path="source/database.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="source/day.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="source/day.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="source/main.cpp" ex="false" tool="1" flavor2="9">
+      </item>
+      <item path="source/queries.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="source/time.cpp" ex="false" tool="1" flavor2="9">
+      </item>
+      <item path="source/time.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="source/ui.cpp" ex="false" tool="1" flavor2="9">
+      </item>
+      <item path="source/ui.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="source/user.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="source/user.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="source/world.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="source/world.h" ex="false" tool="3" flavor2="0">
+      </item>
+    </conf>
+    <conf name="Release-Windows" type="1">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <cTool>
+          <developmentMode>5</developmentMode>
+        </cTool>
+        <ccTool>
+          <developmentMode>6</developmentMode>
+          <stripSymbols>true</stripSymbols>
+          <incDir>
+            <pElem>../../../libraries/irrlicht-1.8.3/include</pElem>
+            <pElem>../../../libraries/sqlite-3.8.4.2/include</pElem>
+          </incDir>
+          <commandLine>-mwindows</commandLine>
+          <preprocessorList>
+            <Elem>_IRR_STATIC_LIB_</Elem>
+          </preprocessorList>
+          <warningLevel>0</warningLevel>
+        </ccTool>
+        <fortranCompilerTool>
+          <developmentMode>5</developmentMode>
+        </fortranCompilerTool>
+        <asmTool>
+          <developmentMode>5</developmentMode>
+          <warningLevel>0</warningLevel>
+        </asmTool>
+        <linkerTool>
+          <output>application.exe</output>
+          <linkerAddLib>
+            <pElem>../../../libraries/irrlicht-1.8.3/lib/Win64-gcc</pElem>
+            <pElem>../../../libraries/sqlite-3.8.4.2/lib/Win64-gcc</pElem>
+          </linkerAddLib>
+          <stripSymbols>true</stripSymbols>
+          <linkerLibItems>
+            <linkerLibLibItem>Irrlicht</linkerLibLibItem>
+            <linkerLibLibItem>opengl32</linkerLibLibItem>
+            <linkerLibLibItem>glu32</linkerLibLibItem>
+            <linkerLibLibItem>gdi32</linkerLibLibItem>
+            <linkerLibLibItem>winmm</linkerLibLibItem>
+            <linkerLibLibItem>sqlite</linkerLibLibItem>
+          </linkerLibItems>
+        </linkerTool>
+      </compileType>
+      <packaging>
+        <packType>Zip</packType>
+        <packFileList>
+          <packFileListElem type="File"
+                            to="${PACKAGE_TOP_DIR}bin/${OUTPUT_BASENAME}.exe"
+                            from="${OUTPUT_PATH}.exe"
+                            perm="755"
+                            owner="root"
+                            group="bin"/>
+        </packFileList>
+      </packaging>
+      <item path="source/application.cpp" ex="false" tool="1" flavor2="9">
+      </item>
+      <item path="source/application.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="source/character.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="source/character.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="source/database.cpp" ex="false" tool="1" flavor2="9">
+      </item>
+      <item path="source/database.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="source/day.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="source/day.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="source/main.cpp" ex="false" tool="1" flavor2="9">
+      </item>
+      <item path="source/queries.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="source/time.cpp" ex="false" tool="1" flavor2="9">
+      </item>
+      <item path="source/time.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="source/ui.cpp" ex="false" tool="1" flavor2="9">
+      </item>
+      <item path="source/ui.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="source/user.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="source/user.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="source/world.cpp" ex="false" tool="1" flavor2="9">
+      </item>
+      <item path="source/world.h" ex="false" tool="3" flavor2="0">
+      </item>
+    </conf>
+    <conf name="Debug-Windows" type="1">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <cTool>
+          <developmentMode>5</developmentMode>
+        </cTool>
+        <ccTool>
+          <incDir>
+            <pElem>../../../libraries/irrlicht-1.8.3/include</pElem>
+            <pElem>../../../libraries/sqlite-3.8.4.2/include</pElem>
+          </incDir>
+          <preprocessorList>
+            <Elem>_IRR_STATIC_LIB_</Elem>
+          </preprocessorList>
+        </ccTool>
+        <fortranCompilerTool>
+          <developmentMode>5</developmentMode>
+        </fortranCompilerTool>
+        <asmTool>
+          <developmentMode>5</developmentMode>
+          <warningLevel>0</warningLevel>
+        </asmTool>
+        <linkerTool>
+          <output>debug.exe</output>
+          <linkerAddLib>
+            <pElem>../../../libraries/irrlicht-1.8.3/lib/Win64-gcc</pElem>
+            <pElem>../../../libraries/sqlite-3.8.4.2/lib/Win64-gcc</pElem>
+          </linkerAddLib>
+          <linkerLibItems>
+            <linkerLibLibItem>Irrlicht</linkerLibLibItem>
+            <linkerLibLibItem>opengl32</linkerLibLibItem>
+            <linkerLibLibItem>glu32</linkerLibLibItem>
+            <linkerLibLibItem>gdi32</linkerLibLibItem>
+            <linkerLibLibItem>winmm</linkerLibLibItem>
+            <linkerLibLibItem>sqlite</linkerLibLibItem>
+          </linkerLibItems>
+        </linkerTool>
+      </compileType>
+      <packaging>
+        <packType>Zip</packType>
+        <packFileList>
+          <packFileListElem type="File"
+                            to="${PACKAGE_TOP_DIR}bin/${OUTPUT_BASENAME}.exe"
+                            from="${OUTPUT_PATH}.exe"
+                            perm="755"
+                            owner="root"
+                            group="bin"/>
+        </packFileList>
+      </packaging>
+      <item path="source/application.cpp" ex="false" tool="1" flavor2="9">
+      </item>
+      <item path="source/application.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="source/character.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="source/character.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="source/database.cpp" ex="false" tool="1" flavor2="9">
+      </item>
+      <item path="source/database.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="source/day.cpp" ex="false" tool="1" flavor2="9">
+      </item>
+      <item path="source/day.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="source/main.cpp" ex="false" tool="1" flavor2="9">
+      </item>
+      <item path="source/queries.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="source/time.cpp" ex="false" tool="1" flavor2="9">
+      </item>
+      <item path="source/time.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="source/ui.cpp" ex="false" tool="1" flavor2="9">
+      </item>
+      <item path="source/ui.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="source/user.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="source/user.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="source/world.cpp" ex="false" tool="1" flavor2="9">
+      </item>
+      <item path="source/world.h" ex="false" tool="3" flavor2="0">
+      </item>
+    </conf>
+  </confs>
+</configurationDescriptor>

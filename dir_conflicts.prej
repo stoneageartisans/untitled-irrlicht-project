@@ -1,0 +1,27 @@
+Trying to add new property 'svn:ignore'
+but the property already exists.
+<<<<<<< (local property value)
+debug-linux
+application.exe
+tsvnsync.tsex
+resources.zip
+Makefile
+debug.exe
+nbproject
+.dep.inc
+application
+build
+database.sqlite
+application-debug.exe
+application-linux
+=======
+application-debug.exe
+resources.zip
+Project.plan
+application.exe
+nbproject
+build
+database.sqlite
+.dep.inc
+Makefile
+>>>>>>> (incoming property value)
